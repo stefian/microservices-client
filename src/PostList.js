@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'; // useEffect - to be used when comp created
 import axios from 'axios';
 import CommentCreate from './CommentCreate';
+import CommentList from './CommentList';
 
 
 export default () => {
@@ -26,6 +27,7 @@ export default () => {
     >
       <div className="card-body">
         <h3>{post.title}</h3>
+        <CommentList postId={post.id} />
         <CommentCreate postId={post.id} />
       </div>
     </div>
