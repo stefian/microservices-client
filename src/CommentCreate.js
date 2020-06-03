@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default () => {
-
+export default ({ postId }) => {
+  return <div />;
 };
